@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tính BMI </title>
+</head>
+<body>
+    <div class="container">
+        <h1>tính BMI </h1>
+        <p contenteditable="">Height (in cm)</p>
+        <input type="number" id="height" placeholder="Your height">
+        <p>Weight (in kg)</p>
+        <input type="number" id="weight" placeholder="Your weight">
+        <button type="button" id="cal" >tính</button>
+        <div id="result"></div>
+
+    </div>
+    <script > 
+        let height1 = document.getElementById('height');
+        let weight1 = document.getElementById('weight');
+        let cal = document.getElementById('cal');
+        
+        function calculate(height, weight) {
+            if(height <= 0 || weight <= 0) {
+                alert('No Calculate');
+            }
+            height = height/100;
+            let bmi = weight/Math.pow(height,2);
+            return bmi;
+        }
+        
+        cal.onclick = function result() {
+            let height = height1.value;
+            let weight = weight1.value;
+            let bmi = calculate(height, weight);
+            if(bmi < 18.5){
+                alert('Bạn bị gầy, nguy cơ phát triển bệnh thấp');
+            } else if(bmi >= 18.5 && bmi <= 24.9){
+                alert('Bạn bình thường, nguy cơ phát triển bệnh trung bình');
+            } else if(bmi >= 25 && bmi <= 29.9){
+                alert('Bạn hơi béo, nguy cơ phát triển bệnh cao');
+            } else if(bmi >= 30 && bmi <= 34.9){
+                alert('Bạn béo phì cấp độ 1, nguy cơ phát triển bệnh cao');
+            } else if(bmi >= 35 && bmi <= 39.9){
+                alert('Bạn béo phì cấp độ 2, nguy cơ phát triển bệnh rất cao');
+            } else if(bmi > 40){
+                alert('Bạn béo phì cấp độ 3, nguy cơ phát triển bệnh nguy hiểm');
+            }
+        }
+        </script>
+</body>
+</html>
