@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+    <title>kiểm tra số năm nhuận </title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <script >
+     // khai báo hàm
+     let nam;
+function kiem_tra_nam_nhuan(nam)
+{
+    // nếu năm chia hết cho 100
+    // thì kiểm tra nó có chia hết cho 400 hay không
+    if (nam % 100 == 0)
+    {
+        // nêu chia hết cho 400 thì là năm nhuận
+        if (nam % 400 == 0){
+            return true;
+        }
+        else { // ngược lại không phải năm nhuận
+            return false;
+        }
+    }
+    else if (nam % 4 == 0){ // trường hợp chia hết cho 4 thì là năm nhuận
+        return true;
+    }
+    else { // cuối cùng trường hợp không phải năm nhuận
+        return false;
+    }
+}
+// sử dụng
+var flag = kiem_tra_nam_nhuan(4);
+ 
+if (flag){
+    alert('là năm nhuận');
+}
+else {
+    alert('không phải là năm nhuận');
+}
+    </script>
+</body>
