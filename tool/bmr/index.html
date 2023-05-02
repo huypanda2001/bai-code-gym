@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Tính chỉ số BMR By Hoàng Thiện</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="../style.css" rel="stylesheet">
+
+
+
+    <script src="../jquery.js"></script>
+
+
+    <script src="js/script.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <div class="wrapper_content">
+        <div class="count-box">
+            <div class="content-form">
+                <form class="form-horizontal" name="cal_frm" id="cal_frm" onsubmit="return false">
+                    <fieldset>
+
+                        <!-- Form Name -->
+                        <h1>
+                            <legend>Công cụ tính BMR by Hoàng thiện</legend>
+                        </h1>
+
+                        <!-- Select Basic -->
+                        <div class="form-group">
+                            <label class="control-label">Giới tính</label>
+                            <div class="">
+                                <select id="opGender" name="opGender" class="form-control">
+									<option value="0">Nam</option>
+									<option value="1">Nữ</option>
+								</select>
+                            </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class=" control-label">Tuổi</label>
+                            <div class="">
+                                <input id="txtAge" name="txtAge" class="form-control input-md" type="text">
+
+                            </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="control-label">Chiều cao</label>
+                            <div class="">
+                                <input id="txtHeight" name="txtHeight" class="form-control input-md" type="text">
+                            </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="control-label" for="txtWeight">Cân nặng</label>
+                            <div class="">
+                                <input id="txtWeight" name="txtWeight" class="form-control input-md" type="text">
+
+                            </div>
+                        </div>
+
+                        <!-- Select Basic -->
+                        <div class="form-group">
+                            <label class="control-label">Hoạt động</label>
+                            <div class="">
+                                <select id="opActivity" name="opActivity" class="form-control">
+									<option value="0">Rất ít hoặc không tập thể dục</option>
+									<option value="1">Nhẹ Nhàng (Tập thể dục nhẹ - 1-3 ngày/tuần)</option>
+									<option value="2">Thường Xuyên (Tập thể dục 3-5 ngày/tuần)</option>
+									<option value="3">Tích Cực (Chăm chỉ tập thể dục 6-7 ngày/tuần</option>
+									<option value="4">Đam Mê (tập gấp đôi Tích cực)</option>
+								</select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div id="thongbaoloi" class="alert alert-warning" role="alert" style="display: none;"></div>
+                        </div>
+
+
+                        <!-- Button (Double) -->
+                        <div class="form-group">
+                            <label class="control-label"></label>
+                            <div class="">
+                                <input type="button" name="tinhbodyfat" class="btn btn-success" value="Tính BMR" onclick="Calculate()">
+                                <input type="reset" class="btn btn-danger" value="Làm lại" onclick="resetAll()">
+                            </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="control-label" for="textinput">Kết quả</label>
+                            <div class="">
+                                <div id="feedback" class="alert alert-success" role="alert" style="font-weight:bold;"></div>
+                            </div>
+                        </div>
+
+
+                    </fieldset>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

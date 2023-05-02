@@ -1,0 +1,169 @@
+body {
+    font-family: 'Patrick Hand', cursive;
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+
+.form {
+    width: 75%;
+    height: 75%
+}
+
+.alert-danger {
+    margin: auto;
+}
+
+.navbar {
+    background-color: #14b74b;
+    border-color: #fff;
+}
+
+.navbar-nav li a {
+    color: #fff !important;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #FFF;
+    font-weight: bold;
+}
+
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+    border-color: #fff;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: #fff;
+}
+
+.navbar-inverse .navbar-nav .active a,
+.navbar-inverse .navbar-nav .active a:focus,
+.navbar-inverse .navbar-nav .active a:hover {
+    background-color: #F7931E;
+}
+
+.form-group select {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+}
+
+.ketqua-top {
+    background: #e9e1c9;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    color: #4d464f
+}
+
+div#feedback {
+    width: 100%;
+}
+
+.ketqua-bottom {
+    background: #14b74b;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 5px 15px;
+    text-align: center;
+    font-size: 1em;
+    color: #fff;
+}
+
+.bmi {
+    text-align: center;
+    color: #fff;
+    font: bold 14px Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+}
+
+.bmi div {}
+
+.bmi1,
+.bmi2,
+.bmi3,
+.bmi4,
+.bmi5 {
+    padding: 15px 0;
+    font: bold 14px Arial, Helvetica, sans-serif;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.bmi1 {
+    background: #18bd9b;
+}
+
+.bmi2 {
+    background: #f4ce01;
+}
+
+.bmi3 {
+    background: #5cade1;
+}
+
+.bmi4 {
+    background: #9a59b5;
+}
+
+.bmi5 {
+    background: #e94c3d;
+}
+
+table,
+td,
+th {
+    text-align: center;
+    border: 0 !important;
+}
+
+.form-group {
+    margin-bottom: 0px!important;
+}
+
+.img-responsive,
+.img-responsive img {
+    display: inline;
+}
+
+
+/* ******** ĐÂY LÀ CHỔ TAU CODE THÊM ĐÂY NGHE ***** */
+
+.wrapper_content {
+    height: 100vh;
+    background: url(./bmr/anh/anh5.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-form {
+    background: url(./bmr/anh/anh4.jpg);
+    height: auto;
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+    border: 4px solid #fff;
+}
+
+legend {
+    animation: hightlight 0.5s 0.5s infinite linear forwards;
+}
+
+@keyframes hightlight {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* ******** ĐÂY LÀ CHỔ TAU CODE THÊM ĐÂY NGHE ***** */
